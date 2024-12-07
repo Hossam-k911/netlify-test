@@ -1,0 +1,23 @@
+ 
+  npm i netlify-cli -g
+ 
+ 
+ <base href="./">
+
+
+RouterModule.forRoot(routes,{useHash:true})
+
+ng build
+
+netlify init
+
+
+[build]
+    command = "ng build"
+    publish = "dist/esm el project"
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
