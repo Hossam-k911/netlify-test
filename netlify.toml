@@ -1,0 +1,9 @@
+[build]
+  command = "ng build"
+  functions = "netlify/functions"
+  publish = "dist\netlify-test"
+
+  [[redirects]]
+    from = "/*"
+    to = "/index.html"
+    status = 200
